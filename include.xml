@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+	
+	<section if="android">
+		<ndll name="adcolony" />
+		<template path="dependencies/android/AndroidManifest.xml" rename="AndroidManifest.xml" />
+		<template path="dependencies/android/libs/armeabi/libImmEndpointWarpJ.so" rename="libs/armeabi/libImmEndpointWarpJ.so" />
+		<dependency name="adcolony" path="dependencies/android" />
+		<java path="dependencies/android/libs/adcolony.jar" />
+		<java path="dependencies/android/libs/google-play-services.jar" />
+		<java path="project/android" />
+		<android extension="adcolony.AdColonyLib" />
+	</section>
+	
+	<section if="ios">
+		<ndll name="adcolony" />
+		<dependency name="dependencies/ios/AdColony.a" />
+		<template path="dependencies/ios/AdColony.a" rename="lib/arm64/AdColony.a" />
+		<template path="dependencies/ios/AdColony.a" rename="lib/armv7/AdColony.a" />
+		<template path="dependencies/ios/AdColony.a" rename="lib/i386/AdColony.a" />
+		<template path="dependencies/ios/AdColony.a" rename="lib/x86_64/AdColony.a" />
+		
+		<dependency name="AdSupport.framework" />
+		<dependency name="AudioToolbox.framework" />
+		<dependency name="AVFoundation.framework" />
+		<dependency name="CoreGraphics.framework" />
+		<dependency name="CoreMedia.framework" />
+		<dependency name="CoreTelephony.framework" />
+		<dependency name="EventKit.framework" />
+		<dependency name="EventKitUI.framework" />
+		<dependency name="MessageUI.framework" />
+		<dependency name="QuartzCore.framework" />
+		<dependency name="Social.framework" />
+		<dependency name="StoreKit.framework" />
+		<dependency name="SystemConfiguration.framework" />
+	</section>
+</extension>
