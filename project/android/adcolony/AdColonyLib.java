@@ -16,6 +16,8 @@ import org.haxe.lime.HaxeObject;
 import org.haxe.lime.GameActivity;
 import org.haxe.extension.Extension;
 
+import java.util.*;
+
 public class AdColonyLib extends Extension implements AdColonyAdListener, AdColonyV4VCListener, AdColonyAdAvailabilityListener
 {
 	public static String APP_ID = "app185a7e71e1714831a49ec7";
@@ -32,8 +34,8 @@ public class AdColonyLib extends Extension implements AdColonyAdListener, AdColo
 	// Keep vars for callback
 	private AdColonyV4VCReward _reward;
 	private AdColonyAd _ad;
-	private boolean _available;
-	private String _zone_id;
+	private Stack _available = new Stack();
+	private Stack _zone_id = new Stack();
 	
 	// Configure AdColony
 	public static void configure( String app, String[] zones, String store, HaxeObject handler )
@@ -223,15 +225,15 @@ public class AdColonyLib extends Extension implements AdColonyAdListener, AdColo
 	{
 		Log.d("AdColony", "onAdColonyAdAvailabilityChange, " + available + ", " + zone_id);
 		
-		_available = available;
-		_zone_id = zone_id;
+		_available.push( available );
+		_zone_id.push( zone_id );
 		Extension.callbackHandler.post (new Runnable()
 		{
 			@Override public void run () 
 			{
 				AdColonyLib.callback.call("onAdColonyAdAvailabilityChange", new Object[] { 
-					_available,
-					_zone_id
+					_available.pop(),
+					_zone_id.pop()
 				});
 			}
 		});
