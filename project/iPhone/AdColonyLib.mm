@@ -94,6 +94,6 @@ namespace adcolony
 			_zone = [[NSString alloc] initWithUTF8String:id];
 		}
 		
-		[AdColony playVideoAdForZone:_zone withDelegate:_instance withV4VCPrePopup:YES andV4VCPostPopup:YES];
+		[AdColony playVideoAdForZone:_zone withDelegate:_instance withV4VCPrePopup:NO andV4VCPostPopup:NO];
 	}
 }

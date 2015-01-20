@@ -145,8 +145,8 @@ public class AdColonyLib extends Extension implements AdColonyAdListener, AdColo
 			@Override public void run () 
 			{
 				AdColonyV4VCAd ad = new AdColonyV4VCAd( ZONE_ID ).withListener( AdColonyLib.instance )
-					.withConfirmationDialog()
-					.withResultsDialog();
+					//.withConfirmationDialog()
+					//.withResultsDialog();
 				
 				ad.show();
 			}
