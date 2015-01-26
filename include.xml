@@ -3,7 +3,7 @@
 	
 	<section if="android">
 		<ndll name="adcolony" />
-		<template path="dependencies/android/AndroidManifest.xml" rename="AndroidManifest.xml" />
+		<!--<template path="dependencies/android/AndroidManifest.xml" rename="AndroidManifest.xml" />-->
 		<template path="dependencies/android/libs/armeabi/libImmEndpointWarpJ.so" rename="libs/armeabi/libImmEndpointWarpJ.so" />
 		<dependency name="adcolony" path="dependencies/android" />
 		<java path="dependencies/android/libs/adcolony.jar" />
