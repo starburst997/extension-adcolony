@@ -1,7 +1,7 @@
 adcolony-openfl
 ========================
 
-AdColony (https://github.com/AdColony) extension for OpenFL
+AdColony (https://github.com/AdColony) extension for OpenFL (iOS / Android)
 
 To compile ndlls:
 
