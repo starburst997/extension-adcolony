@@ -23,4 +23,7 @@
 	<!-- optimize output
 	<haxeflag name="-dce full" /> -->
 	
+	<!-- Native Extensions -->
+	<template path="templates" />
+	
 </project>
