@@ -1,7 +1,7 @@
-adcolony-openfl
+extension-adcolony
 ========================
 
-AdColony (https://github.com/AdColony) extension for OpenFL (iOS / Android)
+AdColony (https://github.com/AdColony) extension for Lime / OpenFL (iOS / Android)
 
 To compile ndlls:
 
