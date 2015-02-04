@@ -11,7 +11,7 @@ To compile ndlls:
 
 Add the extension to haxelib:
 
-    haxelib dev adcolony-openfl PATH_TO_THE_EXTENSION_ROOT
+    haxelib dev extension-adcolony PATH_TO_THE_EXTENSION_ROOT
 
 Usage:
 
