@@ -3,10 +3,10 @@
 	<!-- NMML reference: https://gist.github.com/1763850 -->
 	
 	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
-	<meta title="AdColonyOpenFL" package="com.failsafegames.AdColonyOpenFL" version="1.0.0" company="Failsafe Games" />
+	<meta title="AdColonyExtension" package="com.failsafegames.AdColonyExtension" version="1.0.0" company="Failsafe Games" />
 	
 	<!-- output -->
-	<app main="Main" file="AdColonyOpenFL" path="bin" />
+	<app main="Main" file="AdColonyExtension" path="bin" />
 	
 	<window background="#000000" fps="60" />
 	<window width="800" height="480" unless="mobile" />
@@ -15,7 +15,7 @@
 	<!-- classpath, haxe libs -->
 	<source path="src" />
 	<haxelib name="openfl" />
-	<haxelib name="adcolony-openfl" />
+	<haxelib name="extension-adcolony" />
 	
 	<!-- assets -->
 	<icon path="assets/openfl.svg" />
