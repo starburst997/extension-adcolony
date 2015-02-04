@@ -1,9 +1,9 @@
 {
-  "name": "adcolony-openfl",
-  "url": "",
+  "name": "extension-adcolony",
+  "url": "https://github.com/starburst997/extension-adcolony",
   "license": "MIT",
   "tags": [],
-  "description": "",
+  "description": "AdColony extension for Lime / OpenFL (iOS / Android)",
   "version": "1.0.0",
   "releasenote": "",
   "contributors": [""],
