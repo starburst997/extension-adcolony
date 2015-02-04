@@ -5,8 +5,8 @@
   "tags": ["adcolony", "extension", "lime", "openfl", "ios", "android"],
   "description": "AdColony extension for Lime / OpenFL (iOS / Android)",
   "version": "1.0.0",
-  "releasenote": "",
-  "contributors": [""],
+  "releasenote": "Inital commit",
+  "contributors": ["failsafegames"],
   "dependencies": {
 
   }
