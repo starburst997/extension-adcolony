@@ -18,7 +18,7 @@
   <classpaths>
     <class path="C:\HaxeToolkit\haxe\lib\openfl\2,2,2" />
     <class path="C:\HaxeToolkit\haxe\lib\lime\2,0,4" />
-    <class path="C:\Users\Starburst\Documents\FailsafeGames\AdColony_OpenFL" />
+    <class path="C:\Users\Starburst\Documents\FailsafeGames\extension-adcolony" />
     <class path="src" />
     <class path="C:\HaxeToolkit\haxe\lib\lime\2,0,4\legacy" />
     <class path="bin\android\haxe" />
