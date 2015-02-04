@@ -1,2 +1,2 @@
 call build.bat
-haxelib dev adcolony-openfl %~dp0
+haxelib dev extension-adcolony %~dp0
